@@ -1,0 +1,97 @@
+<div class="body">
+
+  <div class="formulario-padre">
+    <div class="formulario-hijo">
+      <form #addForm="ngForm" enctype="multipart/form-data">
+        <h2>
+          REGISTRAR OVAS
+        </h2>
+        <hr width="300px">
+        <mat-form-field appearance="fill">
+          <mat-label>Titulo Ova</mat-label>
+          <input matInput  [(ngModel)]="name_ova" name="name_ova"
+            autocomplete="off" required>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+          <mat-label>Autor Ova</mat-label>
+          <input matInput  [(ngModel)]="autor_ova" name="autor_ova"
+            autocomplete="off" required>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+          <mat-label>Tema Ova</mat-label>
+          <input matInput  [(ngModel)]="subject_ova" name="subject_ova"
+            autocomplete="off" required>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+          <mat-label>Descripcion Ova</mat-label>
+          <input matInput  [(ngModel)]="description_ova" name="description_ova"
+            autocomplete="off" required>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+          <mat-label>Categoria Ova</mat-label>
+          <input matInput [(ngModel)]="category_ova" name="category_ova"
+            autocomplete="off" required>
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+          <mat-label>Lenguaje Ova</mat-label>
+          <input matInput  [(ngModel)]="languaje_ova" name="languaje_ova"
+            autocomplete="off" required>
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+          <mat-label>Editor Ova</mat-label>
+          <input matInput [(ngModel)]="publisher_ova" name="publisher_ova"
+            autocomplete="off" required>
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+          <mat-label>Fuente Ova</mat-label>
+          <input matInput [(ngModel)]="source_ova" name="source_ova"
+            autocomplete="off" required>
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+          <mat-label>Relacion Ova</mat-label>
+          <input matInput  [(ngModel)]="relation_ova" name="relation_ova"
+            autocomplete="off" required>
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+          <mat-label>Covertura Ova</mat-label>
+          <input matInput  [(ngModel)]="coverage_ova" name="coverage_ova"
+            autocomplete="off" required>
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+          <mat-label>Derechos Ova</mat-label>
+          <input matInput  [(ngModel)]="rights_ova" name="rights_ova"
+            autocomplete="off" required>
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+          <mat-label>Formato Ova</mat-label>
+          <input matInput  [(ngModel)]="format_ova" name="format_ova"
+            autocomplete="off" required>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+          <mat-label>Fecha publicacion ova</mat-label>
+          <input matInput [matDatepicker]="picker" [(ngModel)]="fechaPublicacionOva" name="fechaPublicacionOva" required
+            autocomplete="off">
+          <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+
+        <label for="file">Selecciona el archivo del OVA</label>
+        <input placeholder="Selecciona ss" (change)="fileChange($event)"  type="file"  class="custom-file-input"  id="inputGroupFile01"  aria-describedby="inputGroupFileAddon01" >
+        <label for="file">Selecciona el quiz del OVA</label>
+        <input (change)="fileChange2($event)"  type="file"  class="custom-file-input"  id="inputGroupFile01"  aria-describedby="inputGroupFileAddon01" >
+
+        <button mat-raised-button (click)="adicionarOva(addForm)" [disabled]="addForm.invalid">
+          AGREGAR
+        </button>
+      </form>
+      <button mat-raised-button routerLink="/ingreso">
+        CANCELAR
+      </button>
+    </div>
+  </div>
+</div>
