@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "npm run-script custom",
+    "start": "ng serve",
     "custom": "node install.js",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
