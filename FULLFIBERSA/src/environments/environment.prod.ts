@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  apiBaseUrl: (process.env.NODE_ENV ? 'https://ovasweb.herokuapp.com' : 'http://localhost:4200')
 };
