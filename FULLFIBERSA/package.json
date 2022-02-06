@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "npm run-script install",
-    "install": "node install.js",
+    "start": "npm run-script custom",
+    "custom": "node install.js",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
@@ -30,6 +30,7 @@
     "express": "^4.17.2",
     "path": "^0.12.7",
     "rxjs": "~6.6.0",
+    "shelljs": "^0.8.5",
     "sweetalert2": "^11.0.18",
     "tslib": "^2.1.0",
     "zone.js": "~0.11.4"
