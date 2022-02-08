@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'FULLFIBERSA'`, () => {
+  it(`should have as title 'OVAS WEBSITE'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('FULLFIBERSA');
+    expect(app.title).toEqual('OVAS WEBSITE');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('FULLFIBERSA app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('OVAS WEBSITE app is running!');
   });
 });
