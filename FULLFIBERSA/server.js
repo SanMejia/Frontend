@@ -11,9 +11,9 @@ function requireHTTPS(req, res, next) {
 
 const app = express();
 app.use(requireHTTPS);
-app.use(express.static('./dist/fullfibersa'));
+app.use(express.static('./dist/FULLFIBERSA'));
 app.get('/*', function (req, res) {
-    res.sendFile('index.html', { root: 'dist/fullfibersa/' }
+    res.sendFile('index.html', { root: 'dist/FULLFIBERSA/' }
     );
 });
 /* app.use(express.static(__dirname));
