@@ -3,11 +3,11 @@ const path = require('path');
 
 const app = express();
 
-app.use(express.static(__dirname+'/dist/ng-blog'));
+app.use(express.static(__dirname+'/'));
 app.get('/',function(req,res){
-    res.sendFile(path.join(__dirname+'/dist/ng-blog/index.html'));
+    res.sendFile(path.join(__dirname+'/Componentes/ingreso/ingreso.component.html'));
 });
 
 app.listen(process.env.PORT || 3000, function(){
-    console.log("Node app is running at localhost:" + app.get('port'));
+    console.log("Node app is running at:" + process.env.path + app.get('port'));
   });
