@@ -3,9 +3,9 @@ const path = require('path');
 
 const app = express();
 
-app.use(express.static(__dirname+'/'));
+app.use(express.static('/src'));
 app.get('/',function(req,res){
-    res.sendFile(path.join(__dirname+'/Componentes/ingreso/ingreso.component.html'));
+    res.sendFile(path.join('/src/index.html'));
 });
 
 app.listen(process.env.PORT || 3000, function(){
