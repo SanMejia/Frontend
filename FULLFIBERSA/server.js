@@ -5,7 +5,7 @@ const app = express();
 
 app.use(express.static(__dirname));
 app.get('/',function(req,res){
-    res.sendFile(path.join(__dirname + '/index.html'));
+    res.sendFile(path.join(__dirname + '/app.component.html'));
 });
 
 app.listen(process.env.PORT || 3000, function(){
