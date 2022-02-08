@@ -5,7 +5,7 @@ const app = express();
 
 app.use(express.static('../src'));
 app.get('/',function(req,res){
-    res.sendFile(path.join('/src/index.html'));
+    res.sendFile(path.join('../src/index.html'));
 });
 
 app.listen(process.env.PORT || 3000, function(){
