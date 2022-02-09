@@ -16,6 +16,10 @@ app.get('/*', function (req, res) {
     res.sendFile('index.html', { root: 'dist/FULLFIBERSA/' }
     );
 });
+app.post('/*', function (req, res) {
+    res.sendFile('index.html', { root: 'dist/FULLFIBERSA/' }
+    );
+});
 /* app.use(express.static(__dirname));
 app.get('/',function(req,res){
     res.sendFile(path.join(__dirname + '/src/app/Componentes/ingreso/ingreso.component.html'));
