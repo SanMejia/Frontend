@@ -19,7 +19,8 @@ app.get('/*', function (req, res) {
 });
 app.post('/*', function (req, res) {
     const oe = new RegistrarCampanhasComponent
-    oe.adicionarOva()
+    oe.adicionarOva();
+    res.send("POST Request Called");
     // res.sendFile('index.html', { root: 'dist/FULLFIBERSA/' }
     
 });
