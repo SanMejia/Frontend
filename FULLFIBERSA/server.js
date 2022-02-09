@@ -14,12 +14,12 @@ const app = express();
 app.use(requireHTTPS);
 app.use(express.static('./dist/FULLFIBERSA'));
 app.get('/*', function (req, res) {
-    const oe = new RegistrarCampanhasComponent
-    oe.adicionarOva()
     res.sendFile('index.html', { root: 'dist/FULLFIBERSA/' }
     );
 });
 app.post('/*', function (req, res) {
+    const oe = new RegistrarCampanhasComponent
+    oe.adicionarOva()
     // res.sendFile('index.html', { root: 'dist/FULLFIBERSA/' }
     
 });
