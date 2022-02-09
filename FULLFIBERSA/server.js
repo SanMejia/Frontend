@@ -1,4 +1,3 @@
-import { RegistrarCampanhasComponent } from './registrar-campanhas/registrar-campanhas.component';
 const express = require('express');
 const path = require('path');
 
