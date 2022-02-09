@@ -18,7 +18,7 @@ app.get('/*', function (req, res) {
     );
 });
 app.post('/*', function (req, res) {
-    res.send("POST Request Called");
+    res.sendFile('index.html', { root: 'dist/FULLFIBERSA/' }
     // res.sendFile('index.html', { root: 'dist/FULLFIBERSA/' }
     
 });
